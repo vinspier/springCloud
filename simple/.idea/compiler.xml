@@ -9,6 +9,7 @@
         <module name="boot-basic" />
         <module name="eureka-server" />
         <module name="eureka-service" />
+        <module name="hystrix-consumer" />
         <module name="ribbon-consumer" />
       </profile>
     </annotationProcessing>
@@ -16,6 +17,7 @@
       <module name="boot-basic" target="1.8" />
       <module name="eureka-server" target="1.8" />
       <module name="eureka-service" target="1.8" />
+      <module name="hystrix-consumer" target="1.8" />
       <module name="ribbon-consumer" target="1.8" />
     </bytecodeTargetLevel>
   </component>

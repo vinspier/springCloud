@@ -5,6 +5,7 @@
       <module fileurl="file://$PROJECT_DIR$/../boot-basic/boot-basic.iml" filepath="$PROJECT_DIR$/../boot-basic/boot-basic.iml" />
       <module fileurl="file://$PROJECT_DIR$/../eureka-server/eureka-server.iml" filepath="$PROJECT_DIR$/../eureka-server/eureka-server.iml" />
       <module fileurl="file://$PROJECT_DIR$/../eureka-service/eureka-service.iml" filepath="$PROJECT_DIR$/../eureka-service/eureka-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../hystrix-consumer/hystrix-consumer.iml" filepath="$PROJECT_DIR$/../hystrix-consumer/hystrix-consumer.iml" />
       <module fileurl="file://$PROJECT_DIR$/../ribbon-consumer/ribbon-consumer.iml" filepath="$PROJECT_DIR$/../ribbon-consumer/ribbon-consumer.iml" />
       <module fileurl="file://$PROJECT_DIR$/simple.iml" filepath="$PROJECT_DIR$/simple.iml" />
     </modules>
