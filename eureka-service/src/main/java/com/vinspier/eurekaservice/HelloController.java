@@ -4,10 +4,12 @@ import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cloud.client.ServiceInstance;
 import org.springframework.cloud.client.discovery.DiscoveryClient;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 import java.util.Random;
 
@@ -23,9 +25,9 @@ public class HelloController {
     public String hello() throws Exception{
         ServiceInstance instance = client.getLocalServiceInstance();
         // 模拟服务熔断 hystirx默认超时时间为2000ms
-        int sleepTime = new Random().nextInt(1000);
+        /*int sleepTime = new Random().nextInt(1000);
         logger.info("thread sleeping " + sleepTime + "time");
-        Thread.sleep(sleepTime);
+        Thread.sleep(sleepTime);*/
         logger.info("/hello, host: " + instance.getHost() + ", server_id: " + instance.getServiceId());
         return "hello world";
     }
@@ -38,5 +40,8 @@ public class HelloController {
         return map;
     }
 
-
+    @RequestMapping("/service/{applicationName}")
+    public List<ServiceInstance> getServiceInstance(@PathVariable String applicationName){
+        return client.getInstances(applicationName);
+    }
 }
