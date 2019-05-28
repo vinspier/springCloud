@@ -25,9 +25,9 @@ public class HelloController {
     public String hello() throws Exception{
         ServiceInstance instance = client.getLocalServiceInstance();
         // 模拟服务熔断 hystirx默认超时时间为2000ms
-        /*int sleepTime = new Random().nextInt(1000);
+        int sleepTime = new Random().nextInt(3000);
         logger.info("thread sleeping " + sleepTime + "time");
-        Thread.sleep(sleepTime);*/
+        Thread.sleep(sleepTime);
         logger.info("/hello, host: " + instance.getHost() + ", server_id: " + instance.getServiceId());
         return "hello world";
     }
