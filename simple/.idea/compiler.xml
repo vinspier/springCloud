@@ -6,19 +6,29 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="api-gateway" />
         <module name="boot-basic" />
         <module name="eureka-server" />
         <module name="eureka-service" />
+        <module name="feign-consumer" />
         <module name="hystrix-consumer" />
         <module name="ribbon-consumer" />
+        <module name="ribbon-consumer (1)" />
+        <module name="ribbon-static-consumer" />
+        <module name="service-api" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="1.8">
+      <module name="api-gateway" target="1.8" />
       <module name="boot-basic" target="1.8" />
       <module name="eureka-server" target="1.8" />
       <module name="eureka-service" target="1.8" />
+      <module name="feign-consumer" target="1.8" />
       <module name="hystrix-consumer" target="1.8" />
       <module name="ribbon-consumer" target="1.8" />
+      <module name="ribbon-consumer (1)" target="1.8" />
+      <module name="ribbon-static-consumer" target="1.8" />
+      <module name="service-api" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>
