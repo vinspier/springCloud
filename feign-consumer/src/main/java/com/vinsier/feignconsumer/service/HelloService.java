@@ -10,8 +10,10 @@ import org.springframework.web.bind.annotation.RequestParam;
 /**
  * 编写与提供服务的服务端接口对应接口
  * 和服务端的提供接口几乎一致 代码冗余
+ *
+ * 在构建被@FeignClient修饰的服务客户端时，会为此客户端创建一个Feign.Logger实例
  */
-@FeignClient("hello-service")
+@FeignClient(value = "hello-service",fallback = HelloServiceFallback.class)
 public interface HelloService {
 
     @RequestMapping(value = "/hello")

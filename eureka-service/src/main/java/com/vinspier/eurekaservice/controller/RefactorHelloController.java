@@ -23,6 +23,6 @@ public class RefactorHelloController implements HelloService {
 
     @Override
     public String hello(User user) {
-        return "method hello3:--- and msg: " + user.toString();
+        return "method hello6:--- and msg: " + user.toString();
     }
 }
