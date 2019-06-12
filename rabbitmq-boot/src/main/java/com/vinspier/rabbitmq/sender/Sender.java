@@ -18,7 +18,7 @@ public class Sender {
         System.out.println("==============================================================");
         System.out.println("sender: " + context);
         System.out.println("==============================================================");
-        this.rabbitTemplate.convertAndSend(RabbitConfig.QUEUE,context);
+        this.rabbitTemplate.convertAndSend(RabbitConfig.QUEUE ,context);
     }
 
 }

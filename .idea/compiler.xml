@@ -8,10 +8,12 @@
         <outputRelativeToContentRoot value="true" />
         <module name="api-gateway" />
         <module name="boot-basic" />
+        <module name="config-server" />
         <module name="eureka-server" />
         <module name="eureka-service" />
         <module name="feign-consumer" />
         <module name="hystrix" />
+        <module name="rabbitmq-boot" />
         <module name="ribbon-consumer (1)" />
         <module name="ribbon-consumer (2)" />
         <module name="service-api" />
@@ -20,10 +22,12 @@
     <bytecodeTargetLevel target="1.8">
       <module name="api-gateway" target="1.8" />
       <module name="boot-basic" target="1.8" />
+      <module name="config-server" target="1.8" />
       <module name="eureka-server" target="1.8" />
       <module name="eureka-service" target="1.8" />
       <module name="feign-consumer" target="1.8" />
       <module name="hystrix" target="1.8" />
+      <module name="rabbitmq-boot" target="1.8" />
       <module name="ribbon-consumer (1)" target="1.8" />
       <module name="ribbon-consumer (2)" target="1.8" />
       <module name="service-api" target="1.8" />

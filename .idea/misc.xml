@@ -12,6 +12,8 @@
         <option value="$PROJECT_DIR$/ribbon-consumer/pom.xml" />
         <option value="$PROJECT_DIR$/ribbon-static-consumer/pom.xml" />
         <option value="$PROJECT_DIR$/service-api/pom.xml" />
+        <option value="$PROJECT_DIR$/config-server/pom.xml" />
+        <option value="$PROJECT_DIR$/rabbitmq-boot/pom.xml" />
       </list>
     </option>
   </component>
