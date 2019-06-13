@@ -8,7 +8,9 @@
         <outputRelativeToContentRoot value="true" />
         <module name="api-gateway" />
         <module name="boot-basic" />
+        <module name="config-client-eureka" />
         <module name="config-server" />
+        <module name="config-server-eureka" />
         <module name="eureka-server" />
         <module name="eureka-service" />
         <module name="feign-consumer" />
@@ -22,7 +24,9 @@
     <bytecodeTargetLevel target="1.8">
       <module name="api-gateway" target="1.8" />
       <module name="boot-basic" target="1.8" />
+      <module name="config-client-eureka" target="1.8" />
       <module name="config-server" target="1.8" />
+      <module name="config-server-eureka" target="1.8" />
       <module name="eureka-server" target="1.8" />
       <module name="eureka-service" target="1.8" />
       <module name="feign-consumer" target="1.8" />
